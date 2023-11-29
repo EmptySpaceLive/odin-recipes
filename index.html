@@ -4,16 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
+    <link rel="stylesheet" href="./style/index.css">
 </head>
+<nav class="links">
+    <ul class="left-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Category</a></li>
+        <li><a href="#">Recipes</a></li>
+    </ul>
+    <ul class="right-links">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+</nav>
 <body>
-    <h1>Odin Recipes</h1> 
-    <div>
-        <img src="./img/homeimg.jpg" alt="tomato, garlic and onions on a pan over a table" width="500">
+    <div class="hero">
+        <div class="inner-hero">
+            <p>Cooking with</p>
+            <h1>Odin Recipes</h1> 
+
+        </div>
+        <!-- <img src="./img/homeimg.jpg" alt="tomato, garlic and onions on a pan over a table" width="500"> -->
     </div>
-    <ul>
-        <li><a href="./recipes/macandcheese.html">Chili Dog Mac and Cheese</a></li>
-        <li><a href="./recipes/pestochickenpenne.html">Pesto Chicken Penne Casserole</a></li>
-        <li><a href="./recipes/potatoandbroccoli.html">Ham, Potato and Broccoli Casserole</a></li>
+
+    <ul class="list-recipe">
+        <li class="recipe-card">
+            <a href="./recipes/macandcheese.html">
+            <img src="./img/chili-dog-mac-and-cheese.webp" alt="">
+            Chili Dog Mac and Cheese            
+            </a>
+        </li>
+
+        <li class="recipe-card">
+            <a href="./recipes/pestochickenpenne.html">
+            <img src="./img/pesto-casserole.webp" alt="">
+            Pesto Chicken Penne 
+            </a>
+        </li>
+
+        <li class="recipe-card">
+            <a href="./recipes/potatoandbroccoli.html">
+            <img src="./img/ham-potato-and-broccoli-casserole.webp" alt="">
+            Ham, Potato and Broccoli Casserole
+            </a>
+        </li>
     </ul>
 </body>
 </html>

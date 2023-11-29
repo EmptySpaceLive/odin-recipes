@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Inter:wght@100;400;700&display=swap');
+
+:root{
+    --titleFont:'Ephesis', cursive;
+    --mainFont: 'Inter', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--mainFont);  
+}
+
+.links {
+    display: flex;
+    width: 84vw;
+    padding: 20px 0; 
+}
+
+.left-links,.right-links{
+    display: flex;
+    list-style-type: none;
+    font-weight: bold;
+    gap: 1rem;
+    
+}
+
+.right-links{
+    margin-left: auto;
+    
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+}
+
+ul li a:hover{
+    text-decoration: underline;
+}
+
+.hero{
+    background-image: url(../img/homeimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 4px;
+    width: 84vw;
+    min-height: 42dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.inner-hero{
+    text-align: center;
+    background-color: white;
+    padding: 15px 20px;   
+}
+
+.hero h1{
+    font-family: var(--titleFont);
+    font-size: 5em;
+}
+
+.hero p{
+    color: red;
+    font-family: var(--mainFont);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.list-recipe{
+    display: flex;
+    flex-wrap: wrap;
+    width: 84vw;
+    margin-top: 30px;
+    gap: 20px;
+    max-height: 40dvh;
+}
+
+.recipe-card{       
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.recipe-card a{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 235px;
+}
+
+.recipe-card a img{
+    flex: 1;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    object-fit:cover;
+}
